@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obv.com</title>
+    <link rel="icon" href="./img/Logo-azul-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./img/Logo-azul-menu.svg" alt="Logo" width="80" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pacotes.html">Pacotes de Viagem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promocoes.html">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatos.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="container py-4">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="1950">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/parallax-image1.png" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/parallax-image2.png" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/parallax-image3.png" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</section>
+<section class="jumbotron jumbotron-fluid bg-info text-white banner busca-pacotes">
+    <h2 class="text-center mb-4">Busca de Voos e Pacotes</h2>
+    <form class="row">
+        <div class="col-md-6 mb-3">
+            <label for="origem">Origem:</label>
+            <input type="text" class="form-control" id="origem" name="origem" placeholder="Informe a origem" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="destino">Destino:</label>
+            <input type="text" class="form-control" id="destino" name="destino" placeholder="Informe o destino" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="ida">Ida:</label>
+            <input type="date" class="form-control" id="ida" name="ida" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="volta">Volta:</label>
+            <input type="date" class="form-control" id="volta" name="volta" required>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-rounded">Buscar</button>
+        </div>
+    </form>
+</section>
+<div >
+    <video id="video" src="videos/video-banner.mp4" type="video/mp4" autoplay="autoplay"  loop>
+</div>
+<section class="container py-4" >
+    <h2 class="text-center mb-4">Destaques</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <a href="destaque1.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-1.png" class="card-img-top" alt="destaque 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Eurotrip</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam euismod massa ac sapien placerat, at bibendum risus facilisis.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="destaque2.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-2.png" class="card-img-top" alt="destaque 2">
+                    <div class="card-body">
+                        <h5 class="card-title">São Paulo</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at justo quis neque pellentesque iaculis.
+                                Fusce nec tincidunt eros, sit amet tristique est.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="destaque3.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-3.png" class="card-img-top" alt="destaque 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancún</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas euismod neque eu metus malesuada, eget fermentum sem luctus.
+                                Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                posuere cubilia Curae.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="destaque4.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-4.png" class="card-img-top" alt="destaque 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio de Janeiro</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vestibulum sagittis mi at mi euismod, eu consectetur ex ultrices.
+                                Suspendisse tristique quam in mi tincidunt, a dictum quam consectetur.
+                                Nullam vel neque nec ex varius tincidunt. Aenean egestas mi ut velit fringilla,
+                                eget pharetra mi finibus.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="destaque5.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-5.png" class="card-img-top" alt="destaque 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Salvador</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Mauris euismod hendrerit elit nec maximus. Nulla facilisi.
+                                Praesent mattis velit eu tellus blandit, vel egestas erat malesuada.
+                                Sed et libero id justo venenatis malesuada.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="destaque6.html" class="card-link">
+                <div class="card">
+                    <img src="./img/img-destaques-6.png" class="card-img-top" alt="destaque 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceió</h5>
+                        <details>
+                            <summary>Clique para saber mais</summary>
+                            <p>Suspendisse venenatis tortor vel fringilla accumsan.
+                                Nullam ullamcorper, mauris eu convallis posuere, turpis sapien lobortis justo,
+                                a dictum sapien urna in velit. In ac orci velit. Aenean vehicula dui nec elit ullamcorper,
+                                et fermentum nunc tristique. Vestibulum sit amet odio nec ex iaculis cursus vel vel lorem.
+                                Fusce vel tortor vel odio mattis interdum non eu sem.</p>
+                        </details>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="container py-4">
+    <h2 class="text-center mb-4">obv nas redes</h2>
+    <div class="row justify-content-center">
+        <div class="col-auto m-3">
+            <a href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+        <div class="col-auto m-3">
+            <a href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+        </div>
+        <div class="col-auto m-3">
+            <a href="#">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="bg-light text-center py-3">
+    <p>2023 &copy; desenvolvido por Vanessa Moraes | site fictício atividade do bootcamp FullStack Recode Pro 2023 </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
